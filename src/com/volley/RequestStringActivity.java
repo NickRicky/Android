@@ -1,4 +1,4 @@
-package com.example.demo_webrequest;
+package com.volley;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +14,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.demo_webrequest.R;
+import com.example.demo_webrequest.R.layout;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -39,9 +41,9 @@ public class RequestStringActivity extends Activity {
 		JSONObject jsonSend = null;
 		try{
 			jsonSend = new JSONObject();
-			jsonSend.put("user", "01");
-			jsonSend.put("password", "");
-			jsonSend.put("shebeihao","1234567011");
+//			jsonSend.put("user", "01");
+//			jsonSend.put("password", "");
+//			jsonSend.put("shebeihao","1234567011");
 			jsonSend.put("diancaijihao","006");
 		}catch (JSONException je) {
 			je.printStackTrace();
@@ -58,7 +60,7 @@ public class RequestStringActivity extends Activity {
 	 */
 	public void request4(){
 		//JsonRequest也是继承自Request类的，不过由于JsonRequest是一个抽象类
-		JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,"http://192.168.3.10:808/system/log/", 
+		JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST,"http://192.168.3.10:808/system/cxdcbztzt/", 
 				setJsonParams(), 
 				new Response.Listener<JSONObject>(){
 			@Override

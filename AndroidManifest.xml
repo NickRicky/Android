@@ -24,8 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.demo_webrequest.RequestImageActivity" />
-        <activity android:name="com.example.demo_webrequest.RequestStringActivity" />
+        <activity android:name="com.volley.VolleyActivity" />
+        <activity android:name="com.volley.RequestImageActivity" />
+        <activity android:name="com.volley.RequestStringActivity" />
     </application>
 
 </manifest>
